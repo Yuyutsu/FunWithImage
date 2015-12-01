@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CFk-gL-zjj">
+                                <rect key="frame" x="20" y="28" width="200" height="200"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZLN-wN-DBP"/>
+                                    <constraint firstAttribute="width" constant="300" id="kjw-Md-bX4"/>
+                                    <constraint firstAttribute="width" constant="200" id="q52-on-DFs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kjw-Md-bX4"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Top Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7id-q6-Yef">
+                                <rect key="frame" x="228" y="28" width="352" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bottom Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tE0-6K-R12">
+                                <rect key="frame" x="228" y="66" width="352" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7id-q6-Yef" secondAttribute="trailing" constant="20" id="8ob-kG-ruA"/>
+                            <constraint firstItem="tE0-6K-R12" firstAttribute="top" secondItem="7id-q6-Yef" secondAttribute="bottom" constant="8" id="Cq3-K3-b00"/>
+                            <constraint firstItem="CFk-gL-zjj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="EkH-DQ-uEn"/>
+                            <constraint firstItem="CFk-gL-zjj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="98" id="GAZ-Ov-rwN"/>
+                            <constraint firstItem="tE0-6K-R12" firstAttribute="leading" secondItem="CFk-gL-zjj" secondAttribute="trailing" constant="8" id="KsM-Fo-DCQ"/>
+                            <constraint firstAttribute="trailing" secondItem="tE0-6K-R12" secondAttribute="trailing" constant="20" id="gEw-nP-9Lz"/>
+                            <constraint firstItem="CFk-gL-zjj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="hII-cz-2DY"/>
+                            <constraint firstItem="7id-q6-Yef" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qEY-8I-SQP"/>
+                            <constraint firstItem="7id-q6-Yef" firstAttribute="leading" secondItem="CFk-gL-zjj" secondAttribute="trailing" constant="8" id="wck-mU-571"/>
+                            <constraint firstAttribute="trailing" secondItem="CFk-gL-zjj" secondAttribute="trailing" constant="98" id="weI-po-dtN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GAZ-Ov-rwN"/>
+                                <exclude reference="weI-po-dtN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="CFk-gL-zjj" id="arc-Uj-n1b"/>
+                        <outlet property="txtBottom" destination="tE0-6K-R12" id="m0n-nL-3Ko"/>
+                        <outlet property="txtTop" destination="7id-q6-Yef" id="VkB-i0-N0c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="267"/>
+        </scene>
+    </scenes>
+</document>
